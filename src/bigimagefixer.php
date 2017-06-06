@@ -99,30 +99,66 @@ class PlgContentBigimagefixer extends JPlugin
             }
             */
             
+            if ($debug) $this->app->enqueueMessage("base: " . $_SERVER['DOCUMENT_ROOT'] );
+            
             # loop through the images 
-            foreach ($images as $image_fn) {
+            foreach ($images_array as $i=>$image_fn) {
                 
                 
-                $size = getimagesize($image_fn);
-                $width = $size[0];
-                $height = $size[1];
-                $type = $size[2];
                 
-                if ( $type )
+                $image_filepath = JPATH_ROOT . "/" . $image_fn;
                 
+                list($width, $height, $type) = getimagesize($image_filepath);
+
+                
+                if ($debug) $this->app->enqueueMessage("image " . $i . " fn: " . $image_filepath );
+                if ($debug) $this->app->enqueueMessage("image " . $i . " width: " . $width );
+                if ($debug) $this->app->enqueueMessage("image " . $i . " height: " . $height );
+                if ($debug) $this->app->enqueueMessage("image " . $i . " type: " . $type );
+                
+                
+                # check if it's too big
+                if ($width > $maxwidthpixels OR $height > $maxheightpixels ) {
+
+                    # check if we're modifying this file type
+                    if ( ($type == 2 AND $fixjpg) OR ($type == 3 AND $fixpng) ) {
+                        
+                        # take a copy if backupbigimage is set
+                        if ( $backupbigimage ) {
+                            $backup_filename = $image_filepath . "_backup";
+                            if ( ($type) == 2 ) $backup_filename .= ".jpg";
+                            if ( ($type) == 3 ) $backup_filename .= ".png";
+                            copy($image_filepath, $backup_filename);
+                            if ($debug) $this->app->enqueueMessage("backed up image " . $i . " image as: " . $backup_filename );
+                        }
+                        
+                        $JImage = new JImage($image_filepath);
+                        
+                        
+                        $JImage->resize($maxwidthpixels, $maxheightpixels, FALSE, $JImage::SCALE_INSIDE);
+                        
+                        
+                        $JImage->toFile($image_filepath, $type);
+                        if ($debug) $this->app->enqueueMessage("Image " . $i . " resized");
+                        
+
+                    } else {
+                        if ($debug) $this->app->enqueueMessage("Image " . $i . " is type not to be resized" );
+                    }                         
+                } else {
+                    if ($debug) $this->app->enqueueMessage("Image " . $i . " is ok, not too big" );
+                }
+                
+
 
                 
             }            
             
+
             
             
             
             
-            # check the size
-            
-            
-            
-            # take a copy if backupbigimage is set
 	
 	
 	
