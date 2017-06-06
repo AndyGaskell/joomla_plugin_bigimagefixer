@@ -7,15 +7,27 @@ This plugin will, on save, reduce overly large images that may have been added t
 
 
 ## Options
+The plugin has a few options, they are...
+* Maximum width in pixels: The maximum width in pixels is the size, above which, images will be reduced.
+* Maximum height in pixels: The maximum height in pixels is the size, above which, images will be reduced.
+* Backup large image: you want to keep a backup of the large image? It will have th suffix _backup
+* Process JPG files: Process this file type.
+* Process PNG files: Process this file type.
+* Enable debug: This enables quite verbose debug.
 
+
+## Feedback - issues, questions and suggestions
+Any ideas, issues or sugestions, please just add an issue in GitHub at https://github.com/AndyGaskell/joomla_plugin_bigimagefixer/issues
 
 
 ## Distribution from GitHub
-I was wondering if it is possible to distribute and manage a Joomla extention, listed on the JED, entierly from GitHub.
+I was wondering if it is possible to distribute and manage a Joomla extention, with updates, listed on the JED, entierly from GitHub. So it's a bit of a proof-of-concept
 
 
 ## Tools
-
+* create-release.sh - This takes the src files and creates a zip
+* git-to-local.sh - copy the git working copy files to a joomla install, the joomla install path is set in the script
+* local-to-git.sh - copy files from a joomla install into the git working copy, the joomla install path is set in the script
 
 
 ## Notes and docs
@@ -26,7 +38,7 @@ I was wondering if it is possible to distribute and manage a Joomla extention, l
 * https://downloads.joomla.org/
 * http://rogerdudler.github.io/git-guide/
 * https://api.joomla.org/cms-3/classes/JImage.html 
-
+* https://github.com/joomla-framework/image 
 
 
 ## Git cheatsheet

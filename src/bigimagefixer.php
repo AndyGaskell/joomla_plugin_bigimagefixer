@@ -73,7 +73,6 @@ class PlgContentBigimagefixer extends JPlugin
         if ($debug) $this->app->enqueueMessage("tags: <pre>" . print_r($tags, TRUE) . "</pre>" );
 
         foreach ($tags as $tag) {
-            echo $tag->getAttribute('src');
             $images_array[] = $tag->getAttribute('src');
         }
 
