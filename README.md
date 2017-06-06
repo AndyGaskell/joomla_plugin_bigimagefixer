@@ -7,7 +7,7 @@ This plugin will, on save, reduce overly large images that may have been added t
 
 
 ## Installing
-I'll try and add this to the JED, but for now, best option is to just go to https://github.com/AndyGaskell/joomla_plugin_bigimagefixer/raw/master/dist/bigimagefixer_latest.zip and install it in the normal way.
+I'll try and add this to the JED, but for now, best option is to just go to https://github.com/AndyGaskell/joomla_plugin_bigimagefixer/raw/master/dist/bigimagefixer_latest.zip and install it in the normal way.  After you've installed it, don't forget to enable it in plug-in manager.
 
 
 ## Options
