@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="content" method="upgrade">
-	<name>plg_content_bigimagefixer</name>
+	<name>Big Image Fixer</name>
 	<author>Andy Gaskell @ SSOFB</author>
 	<creationDate>June 2017</creationDate>
 	<copyright>Copyright (C) 2017 SSOFB. All rights reserved.</copyright>
@@ -10,7 +10,7 @@
 	<version>1.0.0</version>
 	<description>PLG_CONTENT_BIGIMAGEFIXER_XML_DESCRIPTION</description>
     <updateservers>
-        <server type="extension" priority="2" name="My Extension's Updates">http://example.com/extension.xml</server>
+        <server type="extension" priority="2" name="Big Image Fixer">https://raw.githubusercontent.com/AndyGaskell/joomla_plugin_bigimagefixer/master/dist/extension.xml</server>
     </updateservers>
 	<files>
 		<filename plugin="bigimagefixer">bigimagefixer.php</filename>
