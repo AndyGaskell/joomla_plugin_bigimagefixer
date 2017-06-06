@@ -6,6 +6,10 @@ https://github.com/AndyGaskell/joomla_plugin_bigimagefixer
 This plugin will, on save, reduce overly large images that may have been added to content.  The idea came from a chat with Pete Rosetti at J & Beyond in 2017.  It seemed like a simple solution for a problem that comes up somtimes.  The problem is that sometimes an inexpeienced CMS user will upload images without resizing them for web use, which can result in very large page sizes.  These large images are often not noticed by users due to css limiting image size to 100%, or similar template code.  So, in a sense, the plug-in provides a bit of insurance against that happening.
 
 
+## Installing
+I'll try and add this to the JED, but for now, best option is to just go to https://github.com/AndyGaskell/joomla_plugin_bigimagefixer/raw/master/dist/bigimagefixer_latest.zip and install it in the normal way.
+
+
 ## Options
 The plugin has a few options, they are...
 * Maximum width in pixels: The maximum width in pixels is the size, above which, images will be reduced.
