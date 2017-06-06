@@ -87,17 +87,7 @@ class PlgContentBigimagefixer extends JPlugin
             if ($debug) $this->app->enqueueMessage("images: <pre>" . print_r($images_array, TRUE) . "</pre>" );
 
             
-            /*
-            $images_html_array = explode("<img ", $article_text);
-            if ($debug) $this->app->enqueueMessage("function article: <pre>" . print_r($images_html_array, TRUE) . "</pre>" );
-            
-            foreach ($images_html_array AS $html_chunk) {
-                if ($debug) $this->app->enqueueMessage("html_chunk: <pre>" . $html_chunk . "</pre>");
-                $start_pos = strpos($html_chunk, "src=");
-                if ($debug) $this->app->enqueueMessage("start_pos: " . rand(10,20) . $start_pos );
-                
-            }
-            */
+
             
             if ($debug) $this->app->enqueueMessage("base: " . $_SERVER['DOCUMENT_ROOT'] );
             
