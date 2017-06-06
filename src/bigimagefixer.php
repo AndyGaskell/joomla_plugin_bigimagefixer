@@ -100,6 +100,21 @@ class PlgContentBigimagefixer extends JPlugin
             */
             
             # loop through the images 
+            foreach ($images as $image_fn) {
+                
+                
+                $size = getimagesize($image_fn);
+                $width = $size[0];
+                $height = $size[1];
+                $type = $size[2];
+                
+                if ( $type )
+                
+
+                
+            }            
+            
+            
             
             
             

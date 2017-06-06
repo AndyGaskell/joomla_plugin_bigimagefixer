@@ -9,7 +9,9 @@
 	<authorUrl>www.ssofb.co.uk</authorUrl>
 	<version>1.0.0</version>
 	<description>PLG_CONTENT_BIGIMAGEFIXER_XML_DESCRIPTION</description>
-
+    <updateservers>
+        <server type="extension" priority="2" name="My Extension's Updates">http://example.com/extension.xml</server>
+    </updateservers>
 	<files>
 		<filename plugin="bigimagefixer">bigimagefixer.php</filename>
 	</files>

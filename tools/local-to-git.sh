@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOCALPATH='/var/www/html/jtest'
+LOCALPATH='/var/www/html/bigimagefixertest'
 
 
 cp $LOCALPATH/plugins/content/bigimagefixer/bigimagefixer.xml ../src/ -v
