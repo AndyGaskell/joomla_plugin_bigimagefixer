@@ -3,7 +3,7 @@
 	<description>Big Image Fixer</description>
 	<element>joomla</element>
 	<type>file</type>
-	<version>1.0</version>
+	<version>1.1</version>
 	<infourl title="Big Image Fixer">https://raw.githubusercontent.com/AndyGaskell/joomla_plugin_bigimagefixer/master/dist/extension.xml</infourl>
 	<downloads>
 		<downloadurl type="full" format="zip">https://github.com/AndyGaskell/joomla_plugin_bigimagefixer/raw/master/dist/bigimagefixer_latest.zip</downloadurl>
