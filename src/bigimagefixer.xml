@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>plg_content_bigimagefixer</name>
+	<author>Andy Gaskell @ SSOFB</author>
+	<creationDate>June 2017</creationDate>
+	<copyright>Copyright (C) 2017 SSOFB. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>ag@ssofb.co.uk</authorEmail>
+	<authorUrl>www.ssofb.co.uk</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_BIGIMAGEFIXER_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="bigimagefixer">bigimagefixer.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_bigimagefixer.ini</language>
+		<language tag="en-GB">en-GB.plg_content_bigimagefixer.sys.ini</language>
+	</languages> 
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+                            
+				<field
+					name="maxwidthpixels"
+					type="text"
+					label="PLG_CONTENT_BIGIMAGEFIXER_MAXWIDTHPIXELS_LABEL"
+					description="PLG_CONTENT_BIGIMAGEFIXER_MAXWIDTHPIXELS_DESC"
+					default="1000"
+				/>                            
+
+				<field
+					name="maxheightpixels"
+					type="text"
+					label="PLG_CONTENT_BIGIMAGEFIXER_MAXHEIGHTPIXELS_LABEL"
+					description="PLG_CONTENT_BIGIMAGEFIXER_MAXHEIGHTPIXELS_DESC"
+					default="1000"
+				/>                                  
+                                
+				<field
+					name="backupbigimage"
+					type="radio"
+					label="PLG_CONTENT_BIGIMAGEFIXER_BACKUPBIGIMAGE_LABEL"
+					description="PLG_CONTENT_BIGIMAGEFIXER_BACKUPBIGIMAGE_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="fixjpg"
+					type="radio"
+					label="PLG_CONTENT_BIGIMAGEFIXER_FIXJPG_LABEL"
+					description="PLG_CONTENT_BIGIMAGEFIXER_FIXJPG_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>                                
+                                
+				<field
+					name="fixpng"
+					type="radio"
+					label="PLG_CONTENT_BIGIMAGEFIXER_FIXPNG_LABEL"
+					description="PLG_CONTENT_BIGIMAGEFIXER_FIXPNG_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>                                 
+
+				<field
+					name="debug"
+					type="radio"
+					label="PLG_CONTENT_BIGIMAGEFIXER_DEBUG_LABEL"
+					description="PLG_CONTENT_BIGIMAGEFIXER_DEBUG_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>                                 
+                                
+                                
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
