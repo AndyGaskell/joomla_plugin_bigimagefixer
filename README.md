@@ -10,16 +10,16 @@ This plugin will, on article save, reduce overly large images that may have been
 I'll try and add this to the JED, but for now, best option is to just go to https://github.com/AndyGaskell/joomla_plugin_bigimagefixer/raw/master/dist/bigimagefixer_latest.zip and install it in the normal way.  After you've installed it, don't forget to enable it in plug-in manager.
 
 
-## Design principles
-* After install it shoudl work invisibly
-* It can be added to a site by an admin and will quietly help users with images being appropriate sizes
-* It should not change the article content at all
-
-
 ## What problems does this solve
 * Article authors keep adding overly large images to content without realising it
 * It'd be good to save time and have all images about the right size
 * Overly large images take up too much space on the server
+
+
+## Design principles
+* After install it should work invisibly
+* It can be added to a site by an admin and will quietly help users with images being appropriate sizes
+* It should not change the article content at all
 
 
 ## Options
